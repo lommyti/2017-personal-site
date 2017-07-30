@@ -179,6 +179,15 @@ a:hover{
     border-radius:8px;
 }
 
+.white-box-insta{
+    background:#fff;
+    display: block;
+    padding:8px;
+    width:100%;
+    text-align: center;
+    border-radius:8px;
+}
+
 .black-link a{
     color:#000;
 }
@@ -210,6 +219,7 @@ close{
     position:absolute;
     z-index: 99999;
 }
+
 .white-box:hover .outlined{
     transform: rotate(180deg);
 }
@@ -411,6 +421,32 @@ li.active{
     overflow:hidden;
 }
 
+#instafeed img{
+    width:100%;
+    border-radius:4px;
+}
+
+.col-md-1{
+    margin:0px;
+    padding-right:10px;
+    padding-left:0px;
+    margin-top:30px;
+}
+
+seeking{
+    background:url(/img/gradient%20reverse.png);
+    display:inline-block;
+    color:#fff;
+    padding:5px;
+    border-radius:10px;
+    text-transform: uppercase;
+    font-family:'Overpass Mono', monospace;
+}
+
+
+.buffer{
+    padding-top:70px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

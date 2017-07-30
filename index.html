@@ -58,13 +58,16 @@
             <div id="foreground"></div>
         </div>
         <div id="about" class="page gradient-reverse">
-            <div class="container">
+            <div class="container buffer">
                 <div class="white-box space vertical-center left">
                     <h3>the quick facts</h3>
                     <div class="line"></div>
-                    <ul>
-                        <li>northwestern university - c/o 2020</li>
+                    <ul style="list-style-type:disc;">
+                        <li>i'm studying computer science / cognitive science w. a certificate in integrated marketing communciations.</li>
+                        <li>i'm interested in hci, ui/ux, web design, & anything else bridging the gap between users and tech.</li>
+                        <li>most recently, i worked at <a href="https://marceldigital.com">marcel digital</a> as a digital marketing intern.</li>
                     </ul>
+                    <p>currently, i'm actively seeking full-time opportunities for <seeking><i class="fa fa-sun-o"></i>summer 2018</seeking> . interested? <a data-scroll href="#contact">drop me a line!</a></p>
                 </div>
                 <div class="white-box space left">
                     <h3>stuff i dig</h3>
@@ -77,11 +80,9 @@
                             <div class="line"></div>
                         </div>
                     </div>
-                    <div class="col-md-1">
-                        <div id="insta-1" class="white-box no-space"></div>
-                    </div>
+                    <div id="instafeed"></div>
                 </div>
-                <div class="row buttons">
+                <div class="row buttons space">
                     <h3>more links :</h3>
                     <a href="/"><i class="fa fa-magic"></i> resume</a>
                     <a href="https://linkedin.com/in/thomastli"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -138,7 +139,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-103575131-1','auto');ga('send','pageview');
         </script>
         <script src="js/gumshoe.js"></script>
         <script src="js/parallaxify.js"></script>
@@ -150,12 +151,18 @@
         gumshoe.init();
         </script>
         <script type="text/javascript">
-            var feed = new Instafeed({
-            get: 'tagged',
-            tagName: 'awesome',
-            clientId: 'YOUR_CLIENT_ID'
+            var userFeed = new Instafeed({
+                clientId:'b16faed0443640339c177ef013c8db80',
+                accessToken: '237014598.1677ed0.710ae7c31cb349d89ac25a78be1ce3b1',
+                get: 'user',
+                userId: '237014598',
+                sortBy: 'most-recent',
+                limit: 5,
+                resolution: 'standard_resolution',
+                template:
+                    '<div class=col-md-1><div class=white-box-insta><img src={{image}}></div></div>'
             });
-            feed.run();
+            userFeed.run();
         </script>
     </body>
 </html>
