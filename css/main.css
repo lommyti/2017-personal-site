@@ -188,6 +188,11 @@ a:hover{
     border-radius:8px;
 }
 
+.white-box-insta img{
+    width:100%;
+    border-radius: 4px;
+}
+
 .black-link a{
     color:#000;
 }
@@ -421,11 +426,6 @@ li.active{
     overflow:hidden;
 }
 
-#instafeed img{
-    width:100%;
-    border-radius:4px;
-}
-
 .col-md-1{
     margin:0px;
     padding-right:10px;
@@ -443,10 +443,10 @@ seeking{
     font-family:'Overpass Mono', monospace;
 }
 
-
 .buffer{
     padding-top:70px;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
