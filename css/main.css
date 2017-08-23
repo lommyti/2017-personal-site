@@ -14,7 +14,8 @@ html, body {
     color: #222;
     font-size: 1em;
     font-family: 'Overpass', sans-serif;
-    line-height: 1.4;
+    font-weight:300;
+    line-height: 140%;
     width:100%;
     height:100%;
 }
@@ -100,14 +101,13 @@ textarea {
 
 a{
     color:#000;
-    text-decoration: underline;
-}
-
-a:hover{
-    letter-spacing: 3px;
-    text-transform: uppercase;
     text-decoration: none;
 }
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -115,9 +115,21 @@ a:hover{
 
 .vertical-center{	
     margin-top:100px;
-    width:auto;
+    width:100%;
     display:inline-block;
     background-size:cover;
+}
+
+.coffee-title{
+    width:30%;
+    text-align: center;
+    margin-top:-70px;
+    margin-left:35%;
+}
+
+.coffee-title img{
+    filter:invert(100%);
+    width:100%;
 }
 
 .box-effect{
@@ -128,10 +140,21 @@ a:hover{
 
 .box-effect-sm{
     margin-left:-25px;
-    padding:0px;
+    padding:0px;.
     margin-top:-1px;
     padding-right:10px;
     line-height:13px;
+}
+
+#home a{
+    color:#fff;
+    display:inline-block;
+    width:auto;
+    font-weight:900;
+}
+
+#home a:hover{
+    text-decoration: none;
 }
 
 .full-page{
@@ -143,16 +166,16 @@ a:hover{
 .page{
     width:100%;
     display: inline-block;
-    padding-bottom:10%;
+    padding:4% 0% 6% 0%;
 }
 
 .gradient{
-    background-image:url(/img/gradient.png);
+    background-image:url(/img/gradien%202.png);
     background-size:cover;
 }
 
 .gradient-reverse{
-    background-image:url(/img/gradient%20reverse.png);
+    background-image:url(/img/gradient%205.png);
     background-size:cover;
 }
 
@@ -171,30 +194,39 @@ a:hover{
 }
 
 .white-box{
-    background:#fff;
     display: block;
-    padding:8px;
     width:100%;
     text-align: center;
     border-radius:8px;
 }
 
 .white-box-insta{
-    background:#fff;
+    margin-top:30px;
     display: block;
-    padding:8px;
     width:100%;
     text-align: center;
-    border-radius:8px;
+    border-radius:18px;
+    transition: .1s ease-in-out;
+    overflow: hidden;
+    background:#000;
 }
 
 .white-box-insta img{
     width:100%;
-    border-radius: 4px;
+    transition: .1s ease-in-out;
+}
+
+.white-box-insta:hover img{
+    transform: scale(1.3);
+    opacity:.5;
 }
 
 .black-link a{
     color:#000;
+}
+
+.invis{
+    display:none;
 }
 
 .outlined{
@@ -236,24 +268,23 @@ p{
 }
 
 h1{
-    font-family: 'Overpass Mono', monospace;
-    font-weight:700;
-    text-transform: uppercase;
-    font-size:35px;
+    font-family:'Overpass';
+    font-weight:900;
+    font-size:30px;
     letter-spacing: 1px;
 }
 
 h2{
-    font-family: 'Overpass Mono', monospace;
-    font-weight:700;
-    text-transform: uppercase;
+    font-family:'Overpass', sans-serif;
+    font-weight:600;
     font-size:24px;
-    letter-spacing: 1px;
+    line-height:34px;
+    letter-spacing: -1px;
     display:inline-block;
 }
 
 h3{
-    font-family: 'Overpass Mono', monospace;
+    font-family:'Overpass', sans-serif;
     font-weight:700;
     text-transform: uppercase;
     letter-spacing:4px;
@@ -271,9 +302,9 @@ h4{
 }
 
 .buttons a{
-    color:#fff;
+    color:#2A3031;
     text-decoration: none;
-    border:3px solid #fff;
+    border:3px solid #2A3031;
     border-radius:15px;
     padding:8px;
     transition: .5s ease;
@@ -297,44 +328,43 @@ h4{
     margin-top:30px;
 }
 
-.line{
-    display:block;
-    border-top:2px solid #000;
-    padding-bottom:15px;
-    width:100%;
-}
 
 #nav-bubble{
-    right:1.5%;
-    height:10%;
-    top:40%;
+    left:15px;
+    top:15px;
     position: fixed;
 }
 
 ul{
-    list-style-type: none;
+    text-align: left;
+    margin-left:0px;
+    padding:0;
+    list-style-type: none;    
 }
 
-li{
-    transition:.5s ease-in-out;
-    -webkit-transition:.5s ease-in-out;
+li a{
+    color:rgba(255,255,255,.5);
+    font-weight:300;
 }
 
-li.active{
-    transform: scale(1.5);
-    -webkit-transform:scale(1.5);
-    margin-bottom:12px;
-    margin-top:12px;
+li.active .circle{
+    background:white;
 }
 
 .circle{
+    display:inline-block;
+    font-size:14px;
     width:15px;
     height:15px;
+    color:transparent;
     border:3px solid #fff;
     border-radius:100%;
-    margin-bottom:10px;
+    margin-bottom:5px;
     box-shadow:0px 0px 5px rgba(0,0,0,.18);
-    background:rgba(0,0,0,.4);
+    background:rgba(0,0,0,.2);
+    transition:.5s ease-in-out;
+    -webkit-transition:.5s ease-in-out;
+    text-indent: 25px;
 }
 
 .portfolio-post{
@@ -344,16 +374,15 @@ li.active{
     height:350px;
     overflow:hidden;
     outline:3px solid #fff;
-    outline-offset: -20px;
+    outline-offset: 0px;
     transition: 0.25s ease;
-    opacity:.8;
-    border-radius:8px;
+    opacity:1;
+    border-radius:0px;
 }
 
 .portfolio-post:hover{
-    outline-offset:0px;    
-    opacity:1;
-    border-radius: 0px;
+    outline-offset:-20px;    
+    opacity:.8;
 }
 
 .portfolio-post h3{
@@ -373,64 +402,9 @@ li.active{
     background-position: center;
 }
 
-#foreground{
-    background:url(/img/shapes%20foreground.png);
-    width:80%;
-    height:100%;
-    background-size: cover;
-    position: absolute;
-    top:10px;
-    right:0;
-    z-index: -99;
-    animation:15s MoveDownUp ease-in-out infinite;
-    animation-delay: 2s;
-}
-
-#background{
-    background:url(/img/shapes%20background.png);
-    width:80%;
-    height:100%;
-    position:absolute;
-    background-size: cover;
-    top:0;
-    right:0;
-    z-index: -9999;
-    animation: 12s MoveUpDown ease infinite;
-}
-
-@keyframes MoveUpDown {
-  0% {
-    top: 0px;
-  }
-  50% {
-    top: 15px;
-  }
-  100% {
-    top: 0;
-}
-}
-
-@keyframes MoveDownUp {
-  0% {
-    top: 10px;
-  }
-  50% {
-    top: 0px;
-  }
-  100% {
-    top: 10px;
-  }
-}
-
 #home{
     overflow:hidden;
-}
-
-.col-md-1{
-    margin:0px;
-    padding-right:10px;
-    padding-left:0px;
-    margin-top:30px;
+    color:#fff;
 }
 
 seeking{
@@ -443,7 +417,87 @@ seeking{
     font-family:'Overpass Mono', monospace;
 }
 
+th,td{
+    padding:5px;
+}
 
+.footer{
+    font-family: 'Overpass', sans-serif;
+    background:#2A3031;
+    padding:20px;
+    color:#fff;
+}
+
+.footer h1{
+    font-family: 'Overpass', sans-serif;
+    font-weight:900;
+    font-size:25px;
+    line-height:
+}
+
+.footer h2{
+    font-size:15px;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+.footer h3{
+    line-height:0px;
+}
+
+.social-icons i{
+    color:#fff;
+    padding:0px 10px 5px 10px;
+    border-bottom:2px solid transparent;
+}
+
+.social-icons i:hover{
+    letter-spacing:0px;
+    border-bottom:2px solid #fff;
+    color:rgba(255, 255, 255, 0.3);
+}
+
+.location{
+    text-align: center;
+    font-weight: 300;
+    font-size:14px;
+    line-height:14px;
+}
+
+.color-blocks{
+    background-image:url(/img/gradient%205%20black.png);
+    background-size:cover;
+    width:29.333%;
+    margin:2%;
+    padding-bottom:10px;
+    color:#fff;
+    padding-top:10px;
+    background-position: top;
+    transition:.5s all ease-in-out;
+}
+
+.color-blocks h2{
+    margin-top:5px;
+    border-bottom:2px solid #fff;
+    width:100%;
+}
+
+.color-blocks:hover{
+    color:#000;
+    background-position: bottom;
+}
+
+.line{
+    display: block;
+    border-bottom:1px solid #bbb;
+    margin-bottom:15px;
+    height:0px;
+    width:25%;
+}
+
+#about img{
+    width:100%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -556,7 +610,6 @@ seeking{
 
     a,
     a:visited {
-        text-decoration: underline;
     }
 
     a[href]:after {

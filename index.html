@@ -11,9 +11,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/1f7de367f8.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700|Overpass:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700|Overpass:300,400,600,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/component.css">
         <script src="js/smooth-scroll.js"></script>
     </head>
     <body>
@@ -25,104 +26,132 @@
             <ul data-gumshoe>
                 <li class="active"><a data-scroll class="active" href="#home"><div class="circle"></div></a></li>
                 <li><a data-scroll href="#about"><div class="circle"></div></a></li>
-                <li><a data-scroll href="#portfolio"><div class="circle"></div></a></li>
                 <li><a data-scroll href="#contact"><div class="circle"></div></a></li>
             </ul>
         </nav>
-        <div id="home" class="full-page">
-            <div class="link-arrow"><img src="/img/arrow.png" style="max-width:170px; top:0px;" draggable="false"></div>
+        <div id="home" class="page gradient-reverse">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="gradient vertical-center" style="width:70%; margin-left:15px;">
-                            <img src="/img/IMG_9855.jpg" width="100%" class="box-effect">
+                    <div class="col-md-12" style="text-align:center">
+                        <div class="coffee-title">
+                            <img src="img/coffee%20header.svg">
                         </div>
+                        <h1>HEY, MY NAME IS THOMAS LI.</h1>
+                        <p>(But most people call me Tommy.)<br / >
+                        </p>
+                        <nav class="cl-effect cl-effect-14">
+                            <a href="/Thomas%20Li%20Resume%202017.pdf">resume</a>
+                            <a href="https://linkedin.com/in/thomastli" target="_blank" >linkedin</a>
+                        </nav>
+                        <br />
+                        <a data-scroll href="#about">Ready? Let's go. <br /><i class="fa fa-arrow-circle-o-down fa-2x"></i></a>
                     </div>
-                    <div class="col-md-6" style="margin-top:25px;">
-                        <div class="gradient vertical-center">
-                            <h1 class="box-effect-sm">hey there 
-                                !</h1>
-                        </div>
-                        <p style="padding:18px;">my name is thomas li & i'm a sophomore at northwestern studying computer science / cognitive science. <br /><br />
-                        <i class="fa fa-arrow-circle-o-left"></i>&nbsp; prev: digital marketing intern @ <a href="https://marceldigital.com">marcel digital</a> <br />
-                        <i class="fa fa-map-pin"></i> &nbsp; current: ???
+                </div>
+            </div>
+        </div>
+        <div id="about" class="page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="margin-top:-30px;">
+                        <h1>""</h1>
                         <br /><br />
-                        this website serves a few purposes. do you want to:<br />
-                        <a data-scroll href="#about">learn about me?</a> &middot <a data-scroll href="#portfolio">see my work?</a> &middot <a data-scroll href="#contact">collaborate?</a></p>
                     </div>
-                    <div class="col-md-3">
-                    </div>
-                </div>
-            </div>
-            <div id="background"></div>
-            <div id="foreground"></div>
-        </div>
-        <div id="about" class="page gradient-reverse">
-            <div class="container buffer">
-                <div class="row buttons space">
-                    <h3>links :</h3>
-                    <a href="/thomas%20li%20resume.pdf"><i class="fa fa-magic"></i> resume</a>
-                    <a href="https://linkedin.com/in/thomastli"><i class="fa fa-linkedin"></i> linkedin</a>
-                </div>
-                <div class="white-box space vertical-center left">
-                    <h3>the quick facts</h3>
-                    <div class="line"></div>
-                    <ul style="list-style-type:disc;">
-                        <li>i'm studying computer science / cognitive science w. a certificate in integrated marketing communciations.</li>
-                        <li>i'm interested in hci, ui/ux, web design, & anything else bridging the gap between users and tech.</li>
-                        <li>most recently, i worked at <a href="https://marceldigital.com">marcel digital</a> as a digital marketing intern.</li>
-                    </ul>
-                    <p>currently, i'm seeking full-time opportunities for <seeking><i class="fa fa-sun-o"></i>summer 2018</seeking> . interested? <a data-scroll href="#contact">drop me a line!</a></p>
-                </div>
-                <div class="white-box space left">
-                    <h3>stuff i dig</h3>
-                    <div class="line"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
-                        <div class="white-box space left">
-                            <h3>my last 5 instagrams <i class="fa fa-arrow-right"></i></h3>
-                            <div class="line"></div>
-                        </div>
+                    <div class="col-md-6" style="margin-top:-40px;">
+                        <h2>Education</h2>
+                        <ul>
+                            <li><strong>Northwestern University - Class of 2020</strong></li>
+                            <li>Computer Science, Communication Studies major</li>
+                            <li>3.87 GPA</li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Ward Melville High School - Class of 2016</li>
+                            <li>36 ACT / 2310 SAT / 800 SAT Mathematics II</li>
+                        </ul>
                     </div>
-                    <div id="instafeed"></div>
+                    <div class="col-md-6">
+                        <img src="img/school.jpg">
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/work.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li><strong>Technology Intern @ Superfly</strong><br /> Sept. 2017 to Dec. 2017</li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul>
+                            <li><strong>Marcel Digital - Digital Marketing Intern</strong><br /> Mar. 2017 to Sept. 2017</li>
+                        </ul>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Interests</h2>
+                        <ul>
+                            <li>Coffee</li>
+                            <li>Live music</li>
+                            <li>Game of Thrones</li>
+                            <li>Ask me about my food Instagram</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/fun.jpg">
+                    </div>
+                </div>
+                <div class="row" style="margin-top:50px;">
+                    <div class="col-md-12">
+                        <h3>CURRENTLY: SEEKING FULL-TIME INTERNSHIP OPPORTUNITIES FOR SUMMER 2018</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 color-blocks">
+                        <i class="fa fa-user fa-2x"></i>
+                        <h2>UI/UX</h2>
+                    </div>
+                    <div class="col-md-4 color-blocks">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <h2>Web Development</h2>
+                    </div>
+                    <div class="col-md-4 color-blocks">
+                        <i class="fa fa-mobile fa-2x"></i>
+                        <h2>Product Design</h2>
+                    </div>
+                </div>
+                <div class="row invis">
+                    <div id="instafeed" class="location"></div>
+                </div>
+                <div class="row" style="margin-top:30px">
+                    <h1>LIKE WHAT YOU SEE? DROP ME A LINE <i class="fa fa-arrow-down"></i></h1>
                 </div>
             </div>
         </div>
-        <div id="portfolio" class="page">
+        <div id="contact" class="footer page">
             <div class="container">
+
                 <div class="row">
-                    <div class="gradient-green vertical-center">
-                        <h3 class="box-effect-sm">work i've done !</h3>
+                    <div class="col-md-4 social-icons"> 
+                        <h2>THOMAS LI ©  2017. <br />social media</h2><br />
+                        <a href="https://twitter.com/tlitech"><i class="fa fa-twitter fa-2x"></i></a> &nbsp;
+                        <a href="https://linkedin.com/in/thomastli"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;
+                        <a href="https://instagram.com/lommyeats"><i class="fa fa-spoon fa-2x"></i></a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="portfolio-post comp">
-                            <h3>COMING SOON</h3>
-                            <h4>!!!</h4>
-                        </div>
+                    <div class="col-md-8">
+                        <h2><br />contact information</h2><br />
+                        <p><i class="fa fa-envelope"></i> &middot; thomastli@u.northwestern.edu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa fa-phone"></i> &middot; (631) 871 - 5050
+                        </p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio-post comp">
-                            <h3>COMING SOON</h3>
-                            <h4>!!!</h4>
-                        </div>
+                    <div class="col-md-12" style="margin-top:40px;">
+                        <h3>SITE LAST UPDATED 8/7/2017</h3>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio-post comp">
-                            <h3>COMING SOON</h3>
-                            <h4>!!!</h4>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="contact" class=" gradient">
-            <div class="container">
-                <div class="row">
-                    <div class="white-box">
-                    <p>email / phone</p></div>
                 </div>
             </div>
         </div>
@@ -140,7 +169,6 @@
             ga('create','UA-103575131-1','auto');ga('send','pageview');
         </script>
         <script src="js/gumshoe.js"></script>
-        <script src="js/parallaxify.js"></script>
         <script type="text/javascript" src="js/instafeed.js"></script>
         <script>
         smoothScroll.init();
@@ -155,10 +183,10 @@
                 get: 'user',
                 userId: '237014598',
                 sortBy: 'most-recent',
-                limit: 5,
+                limit: 4,
                 resolution: 'standard_resolution',
                 template:
-                    '<div class=col-md-1><div class=white-box-insta><img src={{image}}></div></div>'
+                    '<div class=col-lg-3><div class=white-box-insta><img src={{image}}></div><br />{{location}}</div>'
             });
             userFeed.run();
         </script>
