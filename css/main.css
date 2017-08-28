@@ -491,7 +491,7 @@ th,td{
 
 @media(max-width:600px){
     .color-blocks{
-        width:100%;
+        width:96%;
         background:#000;
     }
 }
