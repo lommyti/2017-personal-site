@@ -127,6 +127,12 @@ a:hover, a:focus{
     margin-left:35%;
 }
 
+@media(max-width:600px) {
+    .coffee-title{
+        margin-top:0px;
+    }
+}
+
 .coffee-title img{
     filter:invert(100%);
     width:100%;
@@ -177,16 +183,6 @@ a:hover, a:focus{
 .gradient-reverse{
     background-image:url(/img/gradient%205.png);
     background-size:cover;
-}
-
-.gradient-orange{
-    background-image:url(/img/gradient%20orange.png);
-    background-size:cover;
-}
-
-.gradient-green{
-    background-image: url(/img/gradient%20green.png);
-    background-size: cover;
 }
 
 .white{
@@ -333,6 +329,12 @@ h4{
     left:15px;
     top:15px;
     position: fixed;
+}
+
+@media(max-width:600px){
+    #nav-bubble{
+        display:none;
+    }
 }
 
 ul{
@@ -485,6 +487,13 @@ th,td{
 .color-blocks:hover{
     color:#000;
     background-position: bottom;
+}
+
+@media(max-width:600px){
+    .color-blocks{
+        width:100%;
+        background:#000;
+    }
 }
 
 .line{
