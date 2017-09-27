@@ -1,9 +1,59 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+    <script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+    <script>
+
+        (function($){
+
+            $(document).ready(function(){
+
+                $("a[title]").style_my_tooltips({
+
+                    tip_follows_cursor:true,
+
+                    tip_delay_time:90,
+
+                    tip_fade_speed:600,
+
+                    attribute:"title"
+
+                });
+
+            });
+
+        })(jQuery);
+
+    </script>
+    <!--basic tooltip from tutorial-baby! Enjoy-->
+    <style>
+        .tooltip{
+            display: inline;
+            position: relative;
+        }
+        #s-m-t-tooltip {
+            max-width:300px; /*how big the tooltip can be at most*/
+            border-radius: 0px; /*change your border radius*/
+            padding:3px 4px 5px 4px; /*padding inside tooltip*/
+            margin:20px 7px -2px 20px; /*distance from word*/
+            background-color:#ffffff; /*background color*/ 
+            border:1px solid #E0E0E0; /*border info*/
+            font-family:calibri; /*tooltip font*/
+            font-size:9px; /*tooltip font size*/
+            letter-spacing:2px; /*tooltip letter spacing*/
+            text-transform:uppercase; /*makes the tooltip title uppercase*/
+            color:#000; /*tooltip font color*/
+            z-index:999999999999999999999999999999999999;
+        }
+    </style>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Thomas Li</title>
+<title>UX Project</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -12,175 +62,80 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/1f7de367f8.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700|Overpass:300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/component.css">
-<script src="js/smooth-scroll.js"></script>
+<link rel="stylesheet" href="css/funny-links.css">
+    <script src="js/smooth-scroll.js"></script>    <script src="https://cdn.jsdelivr.net/npm/typeit@4.4.1/dist/typeit.min.js">
+    </script>
+
 </head>
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
 
-<nav id="nav-bubble" data-gumshoe-header>
-<ul data-gumshoe>
-<li class="active"><a data-scroll class="active" href="#home"><div class="circle"></div></a></li>
-<li><a data-scroll href="#about"><div class="circle"></div></a></li>
-<li><a data-scroll href="#contact"><div class="circle"></div></a></li>
-</ul>
-</nav>
-<div id="home" class="page gradient-reverse">
-<div class="container">
-<div class="row">
-<div class="col-md-12" style="text-align:center">
-<div class="coffee-title">
-<img src="img/coffee%20header.svg">
-</div>
-<h1>HEY, MY NAME IS THOMAS LI.</h1>
-<p>(But most people call me Tommy.)<br / >
-</p>
-<nav class="cl-effect cl-effect-14">
-<a href="/Thomas%20Li%20Resume%202017.pdf">resume</a>
-<a href="https://linkedin.com/in/thomastli" target="_blank" >linkedin</a>
-</nav>
-<br />
-<a data-scroll href="#about">Ready? Let's go. <br /><i class="fa fa-arrow-circle-o-down fa-2x"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div id="about" class="page">
-<div class="container">
-<div class="row">
-<div class="col-md-6" style="margin-top:-40px;">
-<h2>Education</h2>
-<ul>
-<li><strong>Northwestern University - Class of 2020</strong></li>
-<li>Computer Science, Communication Studies major</li>
-<li>3.87 GPA</li>
-</ul>
-<div class="line"></div>
-<ul>
-<li>Ward Melville High School - Class of 2016</li>
-<li>36 ACT / 2310 SAT / 800 SAT Mathematics II</li>
-</ul>
-</div>
-<div class="col-md-6">
-</div>
-</div>
-<br />
-<div class="row">
-<div class="col-md-6">
-<img src="img/work.jpg">
-</div>
-<div class="col-md-6">
-<h2>Experience</h2>
-<ul>
-<li><strong>Technology Intern @ Superfly</strong><br /> Sept. 2017 to Dec. 2017</li>
-</ul>
-<div class="line"></div>
-<ul>
-<li><strong>Marcel Digital - Digital Marketing Intern</strong><br /> Mar. 2017 to Sept. 2017</li>
-</ul>
-</div>
-</div>
-<br />
-<div class="row">
-<div class="col-md-6">
-<h2>Interests</h2>
-<ul>
-<li>Coffee</li>
-<li>Live music</li>
-<li>Game of Thrones</li>
-<li>Ask me about my food Instagram</li>
-</ul>
-</div>
-<div class="col-md-6">
-</div>
-</div>
-<div class="row" style="margin-top:50px;">
-<div class="col-md-12">
-<h3>CURRENTLY: SEEKING FULL-TIME INTERNSHIP OPPORTUNITIES FOR SUMMER 2018</h3>
-</div>
-</div>
-<div class="row">
-<div class="col-md-4 color-blocks">
-<i class="fa fa-user fa-2x"></i>
-<h2>UI/UX</h2>
-</div>
-<div class="col-md-4 color-blocks">
-<i class="fa fa-laptop fa-2x"></i>
-<h2>Web Development</h2>
-</div>
-<div class="col-md-4 color-blocks">
-<i class="fa fa-mobile fa-2x"></i>
-<h2>Product Design</h2>
-</div>
-</div>
-<div class="row invis">
-<div id="instafeed" class="location"></div>
-</div>
-<div class="row" style="margin-top:30px; margin-left:15px;">
-<h1>LIKE WHAT YOU SEE? DROP ME A LINE <i class="fa fa-arrow-down"></i></h1>
-</div>
-</div>
-</div>
-<div id="contact" class="footer page">
-<div class="container">
+    <div class="blue contains">
+        <header>DSGN 306 - A BAD USER EXPERIENCE</header>
+        <p>Once upon a time I used Tumblr a lot in the eighth grade. I made some internet friends who were also in eighth grade and together we ripped off/copied Tumblr themes in a vicious cycle of principle-less design. </p>
+        <div class="row">
+            <a data-scroll href="#next"><div class="col-md-6 border"><h3>LET'S BEGIN <i class="fa fa-arrow-down"></i></h3></div></a>
+        </div>
+    </div>
+    <div id="next" class="blue contains">
+        <header class="red">THE GOAL</header>
+        <div class="row" style="margin-top:0px; padding-top:15px; background:#fff; padding-bottom:25px;">
+            <div class="col-md-6"><a href="https://awkward-pengu1n.tumblr.com" target="_blank"><img src="/img/ux1.JPG" width="100%"></a></div>
+            <div class="col-md-6" style=""><ul>
+                <li>This was "good" - this girl probably wrote the majority of the CSS from scratch so it's pretty personalized.
+                </li><br />
+                <li>Fits a certain style of blog - "quality" - as opposed to luxury, personal, fashion, boho, etc.</li><br />
+                <li>Loosely fills the average person's definition of the word "blog"</li></ul></div>
+        </div><br />
+        <div class="row">
+            <a data-scroll href="#worse"><div class="col-md-6 border"><h3>IT GETS WORSE <i class="fa fa-arrow-down"></i></h3></div></a>
+        </div>
+    </div>
+    <div id="worse" class="blue contains">
+        <header class="green">NO MORE FONTS</header>
+        <p>At some point, Tumblr stopped letting people upload their own fonts in the CSS portion of their theme. <span class="times">That meant that any decorative font usually ended up looking like this.</span><br/ ><br /> Or, a lot of times, <span class="pacifico decorative">this</span> would turn into <span class="times decorative">this.</span><br/ ><br/> Which of course just made everything look even sillier. <a href="http://baloono.tumblr.com" target="_blank">Here's an example.</a></p>
+        <div class="row">
+            <a data-scroll href="#links"><div class="col-md-6 border"><h3>BUT WAIT! THERE'S MORE <i class="fa fa-arrow-down"></i></h3></div></a>
+        </div>
+    </div>
+    <div id="links" class="blue contains">
+        <header>WE ALL LIKED REALLY ANNOYING LINK EFFECTS</header>
+        <p>
+            Does <span class="la1">this</span> annoy you? What about this? Or <a href="/" title="this"><span class="la3 orange"></span></a> and <a href="/" title="this"><span class="la3 pink"></span></a> ? <span class="la4"><img src="img/notebook.png" style="position:absolute; margin-top:-40px;margin-left:-5px;"><img src="img/notebook.png" style="position:absolute; margin-top:-40px; margin-left:15px;"><img src="img/map.png" class="animated infinite" width="50px" style="z-index:9999" title="this" id="elm"></span>? [credit for that last one goes to <a href="http://thestruggle.co.vu" target="_blank">thestruggle.co.vu</a>]
+        </p>
+        <div class="row">
+            <a data-scroll href="#conclusion"><div class="col-md-6 border"><h3>& FINALLY... <i class="fa fa-arrow-down"></i></h3></div></a>
+        </div>
+    </div>
+    <div id="conclusion" class="blue contains">
+        <header class="red">CONCLUSIONS</header>
+        <p>
+            1. I was an embarrassing tween<br />
+            2. 
+        </p>
+    </div>
 
-<div class="row">
-<div class="col-md-4 social-icons"> 
-<h2>THOMAS LI ©  2017. <br />social media</h2><br />
-<a href="https://twitter.com/tlitech"><i class="fa fa-twitter fa-2x"></i></a> &nbsp;
-<a href="https://linkedin.com/in/thomastli"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;
-<a href="https://instagram.com/lommyeats"><i class="fa fa-spoon fa-2x"></i></a>
-</div>
-<div class="col-md-8">
-<h2><br />contact information</h2><br />
-<p><i class="fa fa-envelope"></i> &middot; thomastli@u.northwestern.edu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<i class="fa fa-phone"></i> &middot; (631) 871 - 5050
-</p>
-</div>
-<div class="col-md-12" style="margin-top:40px;">
-<h3>SITE LAST UPDATED 8/28/2017</h3>
-</div>
-</div>
-</div>
-</div>
+
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-e.src='https://www.google-analytics.com/analytics.js';
-r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-ga('create','UA-103575131-1','auto');ga('send','pageview');
-</script>
-<script src="js/gumshoe.js"></script>
-<script type="text/javascript" src="js/instafeed.js"></script>
-<script>
-smoothScroll.init();
-</script>
-<script>
-gumshoe.init();
-</script>
-<script type="text/javascript">
-var userFeed = new Instafeed({
-clientId:'b16faed0443640339c177ef013c8db80',
-accessToken: '237014598.1677ed0.710ae7c31cb349d89ac25a78be1ce3b1',
-get: 'user',
-userId: '237014598',
-sortBy: 'most-recent',
-limit: 4,
-resolution: 'standard_resolution',
-template:
-'<div class=col-lg-3><div class=white-box-insta><img src={{image}}></div><br />{{location}}</div>'
-});
-userFeed.run();
-</script>
+    <script src="js/typeit.js"></script>
+    <script>
+        $('.type-it').typeIt({
+            strings: ['I WAS AN EMBARRASSING TWEEN'];
+        });
+    </script>
+    <script>
+        smoothScroll.init();
+        $('#elm').hover(
+            function(){ $(this).addClass('bounce') },
+            function(){ $(this).removeClass('bounce') }
+        )
+    </script>
 </body>
 </html>

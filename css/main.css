@@ -152,6 +152,10 @@ a:hover, a:focus{
     line-height:13px;
 }
 
+#home{
+    width:100%;
+}
+
 #home a{
     color:#fff;
     display:inline-block;
